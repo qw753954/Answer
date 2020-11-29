@@ -1,0 +1,16 @@
+.reply{
+    left: 100%;
+    right: 0;
+    bottom: -110%;
+    transition: all .4s;
+    &.active{
+        left: 0;
+        bottom: 0;
+    }
+    textarea{
+        resize: none;
+    }
+    .fontEdit.active{
+        color: $highlight;
+    }
+}

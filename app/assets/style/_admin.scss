@@ -1,0 +1,15 @@
+.avatarBig{
+    @include avatar(140px, 2px);
+}
+
+.expand{
+    text-align: right;
+    display: none;
+}
+
+#expand i{
+    transition: .3s;
+    &.active{
+        transform: rotate(180deg);
+    }
+}

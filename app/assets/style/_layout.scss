@@ -1,0 +1,41 @@
+aside{
+    width: 22%;
+    min-height: 100vh;
+    position: fixed;
+    ul a::before{
+        @include navLink($highlight){
+            width: 4px;
+        }
+    }
+    ul a::after{
+        @include navLink( rgba($highlight, .07)){
+            right: 0;
+        }
+    }
+    ul a.active::before{
+        opacity: 1;
+    }
+
+    ul a:hover, ul a:hover::after, ul a.active {
+        opacity: 1;
+        color: $highlight;
+    }
+}
+
+.logo{
+    background: url(../images/logo.svg) no-repeat center center/contain;
+    width: 150px;
+    height: 40px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.avatar{
+    @include avatar(40px, 50%);
+}
+
+main{
+    width: 78%;
+    margin-left: 22%;
+}

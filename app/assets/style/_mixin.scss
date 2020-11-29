@@ -1,0 +1,16 @@
+@mixin navLink($bg-color) {
+    position: absolute;
+    content: '';
+    left: 0;
+    height: 36px;
+    background-color: $bg-color;
+    opacity: 0;
+    @content
+};
+
+@mixin avatar($size,$radius){
+    width: $size;
+    height: $size;
+    border-radius: $radius;
+    object-fit: cover;
+}
